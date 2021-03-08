@@ -2,16 +2,18 @@
   "name": " ",
   "version": "0.0.1",
   "description": "",
-  "keywords": [""],
+  "keywords": [
+    ""
+  ],
   "license": "",
   "author": "",
   "scripts": {
-    "build": "parcel build index.html",
+    "build": "./node_modules/.bin/webpack -w",
     "dev": "parcel index.html --open",
-    "start": "npm run build && npm run dev",
-    "build": "./node_modules/.bin/webpack -w"
+    "start": "npm run build && npm run dev"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.4",
+    "webpack-cli": "^4.5.0"
   }
 }
